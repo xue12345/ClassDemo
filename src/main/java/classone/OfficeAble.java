@@ -1,3 +1,5 @@
+package classone;
+
 /**
  * 工程名 ：classdemo
  *

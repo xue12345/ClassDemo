@@ -1,3 +1,5 @@
+package classone;
+
 /**
  * 工程名 ：classdemo
  *
@@ -37,7 +39,7 @@ public class ClassDemo1 {
         //第三种方式----》
         Class c3 =null;
         try {
-             c3 = Class.forName("Foo");
+             c3 = Class.forName("classone.Foo");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
