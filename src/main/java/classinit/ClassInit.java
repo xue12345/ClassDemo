@@ -1,4 +1,4 @@
-package classInit;
+package classinit;
 
 /**
  * @project: classdemo
@@ -13,7 +13,14 @@ public class ClassInit {
 
         //在类的初始化阶段，主要是对类变量进行初始化
         System.out.println(Init.b);
+        //如果该类已经被初始化，则不会再进行初始化
+        System.out.println(Init.a);
 
+        //如果该类已经被初始化，则不会再进行初始化
+        Init.b ++;
+        System.out.println(Init.b);
+        Init init = new Init();
+        System.out.println(init);
     }
 }
 class Init{
@@ -28,6 +35,7 @@ class Init{
      * */
     static {
         b = 9;
+        int d = 200;
         System.out.println("--------初始化类-----------");
     }
 
@@ -36,7 +44,7 @@ class Init{
      * */
     public static int a = 10;
 
-    static int b = 12;
+    public static int b = 12;
 
 
 }
